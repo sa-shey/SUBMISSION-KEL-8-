@@ -1,0 +1,219 @@
+:root {
+    --primary: #b04e30;
+    --bg: #F8E5C5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'SuperGroovy'; /* Nama bebas untuk dipanggil nanti */
+    src: url('fonts/SuperGroovy-Regular.ttf') format('truetype'); /* Sesuaikan path dan format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-retro {
+    font-family: 'SuperGroovy', sans-serif;
+    color: #f7e0c4; /* Warna isi huruf */
+    -webkit-text-stroke: 2px #b04e30; /* Ketebalan dan warna garis luar */
+    text-shadow: 3px 3px 0px #b04e30; /* Efek bayangan 3D */
+}
+
+.content {
+    font-family: 'SuperGroovy', sans-serif;
+    font-size: 2rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    background-image:
+    linear-gradient(#FFEFD5 1.5px, transparent 1.5px),
+    linear-gradient(90deg,#FFEFD5 1.5px, transparent 4px);
+    background-size: 40px 40px;
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-family: SuperGroovy;
+    color: #c85a2a;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav a {
+    font-size: 1rem;
+    margin: 0 1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffe6c7;
+    border: 3px solid #c85a2a;
+    color: #c85a2a;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1.5px 1.5px 0 #c85a2a;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #b04e30;
+    width: 30rem;
+    height: 100vh;
+}
+
+.navbar .navbar-nav.active {
+    right: 0;
+}
+
+.navbar .navbar-nav a:hover {
+    background-color: #c85a2a;
+    color: white;
+    border-color: #b04e30;
+
+}
+
+.navbar .navbar-hamburger a {
+    display: none;
+    padding: 0.5px 5px;
+    background: #ffe6c7;
+    border: 2px solid #c85a2a;
+    color: #c85a2a;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 0 #c85a2a;
+    border-radius: 6px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    padding-top: 120px;
+    gap: 12px;
+}
+
+.hero h1{
+    margin-bottom: 3px;
+}
+
+.btn{
+    display: inline-block;
+    margin : 5px 0;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--bg);
+    background: #b04e30;
+    border: 4px solid #e9b07d;
+    border-radius: 50px;
+}
+
+.risol-container{
+    margin-top: 8px;
+    width: 500px;
+    aspect-ratio: 16 / 9;
+    border: 3px solid #c35a2d;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.risol-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: initial;
+    display: block;
+}
+
+.bottom-strip {
+    background: #c85a2a;
+    text-align: center;
+    padding: 10px;
+    color: #ffe6c7;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    color: var(--primary);
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 0;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--bg);
+        width: fit-content;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 65%;
+    }
+}
