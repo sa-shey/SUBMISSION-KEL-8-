@@ -148,6 +148,7 @@ body {
     border: 5px solid #c35a2d;
     border-radius: 50%;
     overflow: hidden;
+    animation: slideFromLeft 1.5s ease-out forwards;
 }
 
 .risol-container img{
@@ -156,6 +157,7 @@ body {
     object-fit: cover;
     object-position: initial;
     display: block;
+    transition: transform 0.3s ease;
 }
 
 .bottom-strip {
@@ -274,3 +276,17 @@ footer {
         text-align: center;
     }
 }
+
+/* Definisikan animasinya */
+@keyframes slideFromLeft {
+0% {
+    opacity: 0;
+    transform: translateX(-100px); /* Mulai dari luar layar sebelah kiri */
+}
+100% {
+    opacity: 1;
+    transform: translateX(0); /* Berhenti di posisi normal */
+}
+}
+
+
