@@ -28,7 +28,7 @@
 
 .content {
     font-family: 'SuperGroovy', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 body {
@@ -52,8 +52,8 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
-    background-color: #f3d3a45f; /*Menambahkan background color*/
-    box-shadow: 0 4px 10px rgba(176, 78, 48, 0.15); /*Menambahkan bayangan*/
+    background-color: rgba(248, 229, 197, 0.8);
+    box-shadow: 0 4px 10px rgba(176, 78, 48, 0.15);
 }
 
 .navbar .navbar-logo {
@@ -80,7 +80,7 @@ body {
 
 .navbar .navbar-nav {
     display: flex;
-    width: 30rem;
+    margin-left: auto;
 }
 
 .navbar .navbar-nav.active {
@@ -112,7 +112,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
     padding-top: 120px;
     gap: 12px;
@@ -197,11 +196,11 @@ footer {
 
     .navbar .navbar-nav {
         position: absolute;
+        display: block;
         top: 100%;
         right: -100%;
         background-color: var(--bg);
         width: fit-content;
-        height: 100vh;
         transition: 0.3s;
     }
     .navbar .navbar-nav.active {

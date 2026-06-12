@@ -13,17 +13,17 @@
 }
 
 @font-face {
-    font-family: 'SuperGroovy'; /* Nama bebas untuk dipanggil nanti */
-    src: url('fonts/SuperGroovy-Regular.ttf') format('truetype'); /* Sesuaikan path dan format */
+    font-family: 'SuperGroovy'; 
+    src: url('fonts/SuperGroovy-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .text-retro {
     font-family: 'SuperGroovy', sans-serif;
-    color: #f7e0c4; /* Warna isi huruf */
-    -webkit-text-stroke: 2px var(--primary); /* Ketebalan dan warna garis luar */
-    text-shadow: 3px 3px 0px var(--primary); /* Efek bayangan 3D */
+    color: #f7e0c4;
+    -webkit-text-stroke: 2px var(--primary); 
+    text-shadow: 3px 3px 0px var(--primary); 
 }
 
 body {
@@ -33,7 +33,6 @@ body {
     linear-gradient(#FFEFD5 1.5px, transparent 1.5px),
     linear-gradient(90deg,#FFEFD5 1.5px, transparent 4px);
     background-size: 40px 40px;
-
 }
 
 /* Navbar */
@@ -47,8 +46,8 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
-    background-color: #f3d3a45f; /*Menambahkan background color*/
-    box-shadow: 0 4px 10px rgba(176, 78, 48, 0.15); /*Menambahkan bayangan*/
+    background-color: rgba(248, 229, 197, 0.8); 
+    box-shadow: 0 4px 10px rgba(176, 78, 48, 0.15); 
 }
 
 .navbar .navbar-logo {
@@ -75,7 +74,7 @@ body {
 
 .navbar .navbar-nav {
     display: flex;
-    width: 30rem;
+    margin-left: auto;
 }
 
 .navbar .navbar-nav.active {
@@ -86,7 +85,6 @@ body {
     background-color: #c85a2a;
     color: white;
     border-color: var(--primary);
-
 }
 
 .navbar .navbar-hamburger a {
@@ -101,22 +99,6 @@ body {
     border-radius: 6px;
 }
 
-.bottom-strip {
-    background: #c85a2a;
-    text-align: center;
-    padding: 10px;
-    color: #ffe6c7;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    color: var(--primary);
-    background-color: var(--bg);
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 0;
-}
 
 /* MENU SECTION */
 .menu {
@@ -135,17 +117,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
-    margin-bottom: 30px;
-    margin-top: 70px;
-    padding-right: 69%;
-}
-
-.subtitle {
-    color: var(--primary);
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 90px;
 }
 
 .menu-header h2 {
@@ -155,23 +129,8 @@ footer {
     text-shadow:
         3px 3px 0 var(--primary),
         6px 6px 0 wheat;
-}
-
-.btn-menu {
-    text-decoration: none;
-    background: #fff;
-    color: #b85b25;
-    border: 3px solid #b85b25;
-    padding: 12px 28px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-menu:hover {
-    background: #b85b25;
-    color: white;
-}
-
+    }
+    
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -185,10 +144,10 @@ footer {
     border-radius: 15px;
     padding: 15px;
     text-align: center;
-    transition: 0.3s;
     width: 300px;
     height: fit-content;
     margin-bottom: 30px;
+    transition: 0.3s;
 }
 
 .menu-card:hover {
@@ -225,6 +184,23 @@ footer {
     color: #b85b25;
 }
 
+/* Footer */
+.bottom-strip {
+    background: #c85a2a;
+    text-align: center;
+    padding: 10px;
+    color: #ffe6c7;
+    font-weight: bold;
+}
+
+footer {
+    color: var(--primary);
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 0;
+}
+
 /* RESPONSIVE */
 @media (max-width: 992px) {
     .menu-grid {
@@ -244,7 +220,7 @@ footer {
     }
 
     .menu-header h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -269,11 +245,11 @@ footer {
 
     .navbar .navbar-nav {
         position: absolute;
+        display: block;
         top: 100%;
         right: -100%;
         background-color: var(--bg);
         width: fit-content;
-        height: 100vh;
         transition: 0.3s;
     }
 
@@ -292,6 +268,6 @@ footer {
 /* Phone */
 @media (max-width: 576px) {
     html {
-        font-size: 65%;
+        font-size: 70%;
     }
 }
