@@ -186,7 +186,7 @@ body {
 
 /* Footer */
 .bottom-strip {
-    background: #c85a2a;
+    background: var(--primary);
     text-align: center;
     padding: 10px;
     color: #ffe6c7;

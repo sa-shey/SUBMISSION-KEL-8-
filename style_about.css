@@ -139,7 +139,7 @@ body {
     padding-top: 150px;
     max-width: 1000px;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .about-flex {
@@ -165,6 +165,13 @@ body {
     color: rgba(159, 61, 23, 0.879); 
     flex: 1;
     line-height: 1.7; 
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about-desc h2 {
+    text-align: center;
+    font-size: 3.5rem;
 }
 
 .contact-info {
@@ -179,12 +186,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     font-weight: bold;
-    background: #ffe6c7;
+    background: #FFEFD5;
 }
 
 /* Footer */
 .bottom-strip {
-    background: #c85a2a;
+    background: var(--primary);
     text-align: center;
     padding: 10px;
     color: #ffe6c7;
@@ -249,6 +256,20 @@ footer {
         padding: 0.5rem;
         font-size: 1.5rem;
     }
+
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-desc h2 {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
 }
 
 /* Phone */
@@ -256,5 +277,18 @@ footer {
     .about-flex {
         flex-direction: column;
         text-align: center;
+    }
+
+    .risol-container {
+        width: 60%;
+    }
+
+    .about-desc h2 {
+        font-size: 2.5rem;
+        padding: 0 1.5rem;   
+    }
+
+    .contact-info {
+        flex-direction: column;
     }
 }

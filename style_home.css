@@ -13,17 +13,17 @@
 }
 
 @font-face {
-    font-family: 'SuperGroovy'; /* Nama bebas untuk dipanggil nanti */
-    src: url('fonts/SuperGroovy-Regular.ttf') format('truetype'); /* Sesuaikan path dan format */
+    font-family: 'SuperGroovy'; 
+    src: url('fonts/SuperGroovy-Regular.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 .text-retro {
     font-family: 'SuperGroovy', sans-serif;
-    color: #f7e0c4; /* Warna isi huruf */
-    -webkit-text-stroke: 2px var(--primary); /* Ketebalan dan warna garis luar */
-    text-shadow: 3px 3px 0px var(--primary); /* Efek bayangan 3D */
+    color: #f7e0c4; 
+    -webkit-text-stroke: 2px var(--primary); 
+    text-shadow: 3px 3px 0px var(--primary); 
 }
 
 .content {
@@ -159,7 +159,7 @@ body {
 }
 
 .bottom-strip {
-    background: #c85a2a;
+    background: var(--primary);
     text-align: center;
     padding: 10px;
     color: #ffe6c7;
