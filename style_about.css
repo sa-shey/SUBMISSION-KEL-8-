@@ -47,12 +47,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7%;
+    padding: 1.1rem 7%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
+    background-color: #f3d3a45f; /*Menambahkan background color*/
+    box-shadow: 0 4px 10px rgba(176, 78, 48, 0.15); /*Menambahkan bayangan*/
 }
 
 .navbar .navbar-logo {
@@ -252,7 +254,9 @@ footer {
 }
 
 .about-desc {
+    color: rgba(159, 61, 23, 0.879); /*Menambah warna teks*/
     flex: 1;
+    line-height: 1.7; /*Menambah tinggi baris*/
 }
 
 .contact-info {
@@ -262,6 +266,7 @@ footer {
 }
 
 .box {
+    color: var(--primary); /*Menambah warna teks*/
     border: 3px solid #b04e30;
     padding: 20px;
     border-radius: 10px;
